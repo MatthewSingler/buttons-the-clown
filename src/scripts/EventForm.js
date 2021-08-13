@@ -1,4 +1,4 @@
-import { sendRequest } from "./dataccess.js"
+import { sendRequest } from "./dataAccess.js"
 
 const mainContainer = document.querySelector("#container")
 
@@ -7,9 +7,9 @@ mainContainer.addEventListener("click", clickEvent => {
         // Get what the user typed into the form fields
         const userParentName = document.querySelector("input[name='eventParentName']").value
         const userChildName = document.querySelector("input[name='eventChildName']").value
-        const userNumberInAttendance = document.querySelector("input[name='eventNumberAttending").value
+        const userNumberInAttendance = document.querySelector("input[name='eventNumberInAttendance']").value
         const userAddress = document.querySelector("input[name='eventAddress']").value
-        const userEventDate = document.querySelector("input[name='eventDateNeeded']").value
+        const userEventDate = document.querySelector("input[name='eventDate']").value
         const userEventDuration = document.querySelector("input[name='eventDuration']").value
 
         // Make an object out of the user input
@@ -55,7 +55,7 @@ export const eventForm = () => {
         </div>
         <div class="field">
             <label class="label" for="eventDuration">Event Duration</label>
-            <input type="date" name="eventDuration" class="input" />
+            <input type="number" name="eventDuration" class="input" />
         </div>
 
         <button class="button" id="submitRequest">Submit Request</button>
