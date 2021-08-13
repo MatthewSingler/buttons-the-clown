@@ -1,0 +1,15 @@
+{
+    "clowns": [],
+    "assignedRequests": [],
+    "requests": [
+        {
+            "id": 1,
+            "parentName": "Melissa",
+            "childName": "Monty",
+            "numberInAttendance": 12,
+            "location": "111 My House",
+            "eventDate": "2021-10-01",
+            "eventDuration": 2
+        }
+    ]
+}

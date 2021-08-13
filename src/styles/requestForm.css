@@ -1,0 +1,16 @@
+.field {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+}
+
+.button {
+    margin: 1rem 0 2rem 2rem;
+    padding: 0.5rem;
+    background-color: rgb(21, 178, 206);
+    color: rgb(117, 79, 8);
+    font-size: 1rem;
+}
