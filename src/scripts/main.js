@@ -1,6 +1,7 @@
 import { buttonsTheClown } from "./ButtonsTheClown.js"
 import { fetchRequests } from "./dataAccess.js"
 
+
 const mainContainer = document.querySelector("#container")
 
 const render = () => {
@@ -12,3 +13,9 @@ const render = () => {
 }
 
 render()
+
+mainContainer.addEventListener(
+    "stateChanged", CustomEvent => {
+        render()
+    }
+)
